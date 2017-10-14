@@ -14,28 +14,27 @@
 7. Your click function should change the color of your border and the background-color of the box.
 */
 var guze0001 = {
-    console.log("guze0001 OK");
-    let childDiv = document.createElement("div");
-    childDiv.attr.add("class", "box");
-    childDiv.textContent = "guze0001";
-    console.log("textContent Modified");
-    let boxesDiv = document.querySelector("#boxes");
-    boxesDiv.addElement(childDiv);
-    boxesDiv.addEventListener("click", boxesClick);
-    boxesDiv.addEventListener("mouseover", boxesMouseOver);
-    boxesDiv.addEventListener("mouseout", boxesMouseOut);
-
-    function boxesClick(ev) {
+    init: function () {
+        this.console.log("guze0001 OK");
+        var childDiv = this.document.createElement("div");
+        childDiv.attr.add("class", "box");
+        childDiv.textContent = "guze0001";
+        this.console.log("textContent Modified");
+        var boxesDiv = this.document.querySelector("#boxes");
+        boxesDiv.addElement(childDiv);
+        boxesDiv.addEventListener("click", this.boxesClick);
+        boxesDiv.addEventListener("mouseover", this.boxesMouseOver);
+        boxesDiv.addEventListener("mouseout", this.boxesMouseOut);
+    },
+    boxesClick: function (ev) {
         ev.currentTarget.style.borderColor = "#FFCC33";
         ev.currentTarget.style.backgroundColor = "#CCC"
-    }
-
-    function boxesMouseOver(ev) {
+    },
+    boxesMouseOver: function (ev) {
+        ev.currentTarget.classList.toggle("highlight");
+    },
+    boxesMouseOut: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
     }
-
-    function boxesMouseOut(ev) {
-        ev.currentTarget.classList.toggle("highlight");
-    }
-
 }
+guze0001.init();
