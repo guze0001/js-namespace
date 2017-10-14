@@ -15,7 +15,7 @@
 */
 var guze0001 = {
     init: function () {
-        //this.console.log("guze0001 OK");
+        console.log("guze0001 OK");
         var childDiv = this.document.createElement("div");
         childDiv.attr.add("class", "box");
         childDiv.textContent = "guze0001";
