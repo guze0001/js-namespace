@@ -15,11 +15,11 @@
 */
 var guze0001 = {
     init: function () {
-        this.console.log("guze0001 OK");
+        //this.console.log("guze0001 OK");
         var childDiv = this.document.createElement("div");
         childDiv.attr.add("class", "box");
         childDiv.textContent = "guze0001";
-        this.console.log("textContent Modified");
+        //this.console.log("textContent Modified");
         var boxesDiv = this.document.querySelector("#boxes");
         boxesDiv.addElement(childDiv);
         boxesDiv.addEventListener("click", this.boxesClick);
