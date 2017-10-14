@@ -14,9 +14,11 @@
 7. Your click function should change the color of your border and the background-color of the box.
 */
 var guze0001 = {
+    console.log("guze0001 OK");
     let childDiv = document.createElement("div");
     childDiv.attr.add("class", "box");
     childDiv.textContent = "guze0001";
+    console.log("textContent Modified");
     let boxesDiv = document.querySelector("#boxes");
     boxesDiv.addElement(childDiv);
     boxesDiv.addEventListener("click", boxesClick);
