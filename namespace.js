@@ -22,9 +22,9 @@ var GUZE0001 = {
         console.log("textContent Modified");
         let boxesDiv = document.querySelector("#boxes");
 
-        childDiv.addEventListener("click", guze0001.boxesClick);
-        childDiv.addEventListener("mouseover", guze0001.boxesMouseOver);
-        childDiv.addEventListener("mouseout", guze0001.boxesMouseOut);
+        childDiv.addEventListener("click", GUZE0001.boxesClick);
+        childDiv.addEventListener("mouseover", GUZE0001.boxesMouseOver);
+        childDiv.addEventListener("mouseout", GUZE0001.boxesMouseOut);
         boxesDiv.appendChild(childDiv);
     },
     boxesClick: function (ev) {
