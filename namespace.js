@@ -17,7 +17,7 @@ var guze0001 = {
     init: function () {
         console.log("guze0001 OK");
         let childDiv = document.createElement("div");
-        childDiv.attr.add("class", "box");
+        childDiv.classList.add("box");
         childDiv.textContent = "guze0001";
         console.log("textContent Modified");
         let boxesDiv = document.querySelector("#boxes");
