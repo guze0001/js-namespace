@@ -21,7 +21,7 @@ var guze0001 = {
         childDiv.textContent = "guze0001";
         console.log("textContent Modified");
         let boxesDiv = document.querySelector("#boxes");
-        boxesDiv.addElement(childDiv);
+        boxesDiv.appendChild(childDiv);
         boxesDiv.addEventListener("click", this.boxesClick);
         boxesDiv.addEventListener("mouseover", this.boxesMouseOver);
         boxesDiv.addEventListener("mouseout", this.boxesMouseOut);
