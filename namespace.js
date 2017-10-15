@@ -13,7 +13,7 @@
 
 7. Your click function should change the color of your border and the background-color of the box.
 */
-var guze0001 = {
+var GUZE0001 = {
     init: function () {
         console.log("guze0001 OK");
         let childDiv = document.createElement("div");
@@ -38,4 +38,4 @@ var guze0001 = {
         ev.currentTarget.classList.toggle("highlight");
     }
 }
-guze0001.init();
+GUZE0001.init();
