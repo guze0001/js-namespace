@@ -21,10 +21,11 @@ var guze0001 = {
         childDiv.textContent = "guze0001";
         console.log("textContent Modified");
         let boxesDiv = document.querySelector("#boxes");
+
+        childDiv.addEventListener("click", guze0001.boxesClick);
+        childDiv.addEventListener("mouseover", guze0001.boxesMouseOver);
+        childDiv.addEventListener("mouseout", guze0001.boxesMouseOut);
         boxesDiv.appendChild(childDiv);
-        boxesDiv.addEventListener("click", guze0001.boxesClick);
-        boxesDiv.addEventListener("mouseover", guze0001.boxesMouseOver);
-        boxesDiv.addEventListener("mouseout", guze0001.boxesMouseOut);
     },
     boxesClick: function (ev) {
         ev.currentTarget.style.borderColor = "#FFCC33";
