@@ -28,7 +28,7 @@ var guze0001 = {
     },
     boxesClick: function (ev) {
         ev.currentTarget.style.borderColor = "#FFCC33";
-        ev.currentTarget.style.backgroundColor = "#CCC"
+        ev.currentTarget.style.backgroundColor = "#CCC";
     },
     boxesMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
