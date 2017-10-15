@@ -15,13 +15,12 @@
 */
 var GUZE0001 = {
     init: function () {
-        console.log("guze0001 OK");
+        console.log("guze0001 init OK");
         let childDiv = document.createElement("div");
         childDiv.classList.add("box");
         childDiv.textContent = "guze0001";
         console.log("textContent Modified");
         let boxesDiv = document.querySelector("#boxes");
-
         childDiv.addEventListener("click", GUZE0001.boxesClick);
         childDiv.addEventListener("mouseover", GUZE0001.boxesMouseOver);
         childDiv.addEventListener("mouseout", GUZE0001.boxesMouseOut);
@@ -38,4 +37,4 @@ var GUZE0001 = {
         ev.currentTarget.classList.toggle("highlight");
     }
 }
-GUZE0001.init();
+//GUZE0001.init();
