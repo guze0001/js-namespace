@@ -1,25 +1,17 @@
 /*
-1. create a div,
-
-2. give it the CSS className "box",
-
-3. add your username as text,
-
-4. append the div to the element with the id "boxes",
-
-5. add three event listeners. The listeners it needs are a click listener, a mouseover listener, and a mouseout listener.
-
-6. The mouseover and mouseout functions will toggle a CSS className called "highlight".
-
-7. Your click function should change the color of your border and the background-color of the box.
+1. create a div, OK 
+2. give it the CSS className "box", OK
+3. add your username as text, OK
+4. append the div to the element with the id "boxes", OK
+5. add three event listeners. The listeners it needs are a click listener, a mouseover listener, and a mouseout listener. OK
+6. The mouseover and mouseout functions will toggle a CSS className called "highlight". OK
+7. Your click function should change the color of your border and the background-color of the box. OK
 */
 var GUZE0001 = {
     init: function () {
-        console.log("guze0001 init OK");
         let childDiv = document.createElement("div");
         childDiv.classList.add("box");
         childDiv.textContent = "guze0001";
-        console.log("textContent Modified");
         let boxesDiv = document.querySelector("#boxes");
         childDiv.addEventListener("click", GUZE0001.boxesClick);
         childDiv.addEventListener("mouseover", GUZE0001.boxesMouseOver);
@@ -37,4 +29,3 @@ var GUZE0001 = {
         ev.currentTarget.classList.toggle("highlight");
     }
 }
-//GUZE0001.init();
