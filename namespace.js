@@ -35,7 +35,7 @@ var GUZE0001 = {
         for (let i = 0 ; i<6; i++ )
             {
                 let num= Math.floor(Math.random()*16);
-                colourCode += num;
+                colourCode += letters[num];
             }
         return colourCode;
     }
