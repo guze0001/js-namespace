@@ -19,8 +19,11 @@ var GUZE0001 = {
         boxesDiv.appendChild(childDiv);
     },
     boxesClick: function (ev) {
-        ev.currentTarget.style.borderColor = "#466F75";
-        ev.currentTarget.style.backgroundColor = "#48DCF5";
+        let num= Math.floor(Math.random()*7);
+        let bColour= "#"+num + (num+1) + (num+2);
+        let bgColur = "#"+(num +2) + (num +1) + num;
+        ev.currentTarget.style.borderColor = bColour ;
+        ev.currentTarget.style.backgroundColor = bgColur;
     },
     boxesMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
