@@ -19,16 +19,24 @@ var GUZE0001 = {
         boxesDiv.appendChild(childDiv);
     },
     boxesClick: function (ev) {
-        let num= Math.floor(Math.random()*7);
-        let bgColour= "#"+num + (num+1) + (num+2);
-        let bColour = "#"+(num +2) + (num +1) + num;
-        ev.currentTarget.style.borderColor = bColour ;
+        ev.currentTarget.style.borderColor = GUZE0001.generateRandomColour() ;
         ev.currentTarget.style.backgroundColor = bgColour;
     },
     boxesMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
     },
      boxesMouseOut: function (ev) {
+         ev.currentTarget.style= null;
         ev.currentTarget.classList.toggle("highlight");
+    },
+    generateRandomColour : function(){
+        let letters = "0123456789ABCDEF";
+        let colourCode= "#";
+        for (let i = 0 ; i<6; i++ )
+            {
+                let num= Math.floor(Math.random()*16);
+                colourCode += num;
+            }
+        return colourCode;
     }
 }
