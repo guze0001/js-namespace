@@ -29,6 +29,7 @@ var GUZE0001 = {
      boxesMouseOut: function (ev) {
          ev.currentTarget.style= null;
         ev.currentTarget.classList.toggle("highlight");
+         ev.currentTarget.style.cursor= "alias";
     },
     generateRandomColour : function(){
         let letters = "0123456789ABCDEF";
