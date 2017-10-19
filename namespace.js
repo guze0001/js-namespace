@@ -20,10 +20,10 @@ var GUZE0001 = {
     },
     boxesClick: function (ev) {
         let num= Math.floor(Math.random()*7);
-        let bColour= "#"+num + (num+1) + (num+2);
-        let bgColur = "#"+(num +2) + (num +1) + num;
+        let bgColour= "#"+num + (num+1) + (num+2);
+        let bColour = "#"+(num +2) + (num +1) + num;
         ev.currentTarget.style.borderColor = bColour ;
-        ev.currentTarget.style.backgroundColor = bgColur;
+        ev.currentTarget.style.backgroundColor = bgColour;
     },
     boxesMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
