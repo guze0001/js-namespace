@@ -15,17 +15,14 @@ var GUZE0001 = {
         let boxesDiv = document.querySelector("#boxes");
         childDiv.addEventListener("click", GUZE0001.boxesClick);
         childDiv.addEventListener("mouseover", GUZE0001.boxesMouseOverOut);
-        //childDiv.addEventListener("mouseout", GUZE0001.boxesMouseOut);
+        childDiv.addEventListener("mouseout", GUZE0001.boxesMouseOverOut);
         boxesDiv.appendChild(childDiv);
     },
     boxesClick: function (ev) {
-        ev.currentTarget.style.borderColor = "#FFCC33";
-        ev.currentTarget.style.backgroundColor = "#CCC";
+        ev.currentTarget.style.borderColor = "#466F75";
+        ev.currentTarget.style.backgroundColor = "#48DCF5";
     },
     boxesMouseOverOut: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
-    }//,
-//    boxesMouseOut: function (ev) {
-//        ev.currentTarget.classList.toggle("highlight");
-//    }
+    }
 }
