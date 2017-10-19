@@ -20,7 +20,7 @@ var GUZE0001 = {
     },
     boxesClick: function (ev) {
         ev.currentTarget.style.borderColor = GUZE0001.generateRandomColour() ;
-        ev.currentTarget.style.backgroundColor = bgColour;
+        ev.currentTarget.style.backgroundColor = GUZE0001.generateRandomColour();
     },
     boxesMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
