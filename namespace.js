@@ -24,6 +24,7 @@ var GUZE0001 = {
     },
     boxesMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");
+        ev.currentTarget.style.cursor= "alias";
     },
      boxesMouseOut: function (ev) {
          ev.currentTarget.style= null;
